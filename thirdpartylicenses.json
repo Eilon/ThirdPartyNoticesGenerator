@@ -1,0 +1,77 @@
+﻿[
+  {
+    "packageId": "HTML5 Boilerplate",
+    "packageVersion": null,
+    "licenseFile": "HTML5Boilerplate.txt"
+  },
+  {
+    "packageId": "Normalize.css",
+    "packageVersion": null,
+    "licenseFile": "Normalizecss.txt"
+  },
+  {
+    "packageId": "css-transitions",
+    "packageVersion": null,
+    "licenseFile": "css-transitions.txt"
+  },
+  {
+    "packageId": "micro-clearfix-hack",
+    "packageVersion": null,
+    "licenseFile": "micro-clearfix-hack.txt"
+  },
+  {
+    "packageId": "Bootstrap",
+    "packageVersion": "3.3.7",
+    "licenseFile": "Bootstrap.txt"
+  },
+  {
+    "packageId": "jQuery",
+    "packageVersion": "3.3.1",
+    "licenseFile": "jQuery.txt"
+  },
+  {
+    "packageId": "jQuery Validation",
+    "packageVersion": "1.17.0",
+    "licenseFile": "jQueryValidation.txt"
+  },
+  {
+    "packageId": "Libuv",
+    "packageVersion": "1.10.0",
+    "licenseFile": "Libuv.txt"
+  },
+  {
+    "packageId": "MessagePack",
+    "packageVersion": "1.7.3.4",
+    "licenseFile": "MessagePack.txt"
+  },
+  {
+    "packageId": "Newtonsoft.Json",
+    "packageVersion": "11.0.2",
+    "licenseFile": "NewtonsoftJson.txt"
+  },
+  {
+    "packageId": "Remotion.Linq",
+    "packageVersion": "2.2.0",
+    "licenseFile": "RemotionLinq.txt"
+  },
+  {
+    "packageId": "sqlite",
+    "packageVersion": null,
+    "licenseFile": "sqlite.txt"
+  },
+  {
+    "packageId": "SQLitePCLRaw",
+    "packageVersion": "1.1.10",
+    "licenseFile": "SQLitePCLRaw.txt"
+  },
+  {
+    "packageId": "StackExchange.Redis.StrongName",
+    "packageVersion": "1.2.4",
+    "licenseFile": "StackExchangeRedisStrongName.txt"
+  },
+  {
+    "packageId": "System.Interactive.Async",
+    "packageVersion": "3.1.1",
+    "licenseFile": "SystemInteractiveAsync.txt"
+  }
+]
