@@ -18,7 +18,10 @@ namespace ThirdPartyNoticeGenerator
             var outputPath = "output";
             Directory.CreateDirectory(outputPath);
 
-            using (var fullThirdPartyLicenseFile = File.CreateText(Path.Combine(outputPath, "ThirdPartyNotices.txt")))
+            var thirdPartyNoticesOutputFile = Path.Combine(outputPath, "ThirdPartyNotices.txt");
+            Console.WriteLine($"Writing Third Party Notices to: {thirdPartyNoticesOutputFile}");
+
+            using (var fullThirdPartyLicenseFile = File.CreateText(thirdPartyNoticesOutputFile))
             {
                 // Write header
                 fullThirdPartyLicenseFile.Write(thirdPartyNoticesHeader);
@@ -38,6 +41,8 @@ namespace ThirdPartyNoticeGenerator
                         new string('-', thirdPartyNoticeTitle.Length);
 
                     var licenseFile = Path.Combine("licenses", licenseEntry.LicenseFile);
+                    Console.WriteLine($"Reading license file '{licenseFile}'...");
+
                     var licenseContents = File.ReadAllText(licenseFile, Encoding.UTF8);
 
                     if (string.IsNullOrEmpty(licenseContents))
@@ -52,6 +57,8 @@ namespace ThirdPartyNoticeGenerator
                     fullThirdPartyLicenseFile.WriteLine(licenseContents);
                 }
             }
+
+            Console.WriteLine("Done!");
         }
 
         private static ThirdPartyLicense[] GetThirdPartyLicenseEntries()
